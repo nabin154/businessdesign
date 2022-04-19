@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <section id="header">
+        <div class="container">
+            <img src="images/logo.png" class="logo" alt="" />
+
+            <div class="header-text">
+                <h1>
+                    The purpose is to<br />
+                    teach, bring learning to people
+                </h1>
+                <span class="square"></span>
+                <p>
+                    There are many variations of passages of lorem ipsum available,but
+                    the majority Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Laborum velit iusto adipisci maxime possimus natus nostrum
+                    saepe, qui architecto quam.
+                </p>
+                <button class="common-btn">Read more</button>
+                <div class="line">
+                    <span class="line1"></span><br />
+                    <span class="line2"></span><br />
+                    <span class="line3"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <nav id="sideNav">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">Offer</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <img src="images/menu.png" id="menubtn" alt="" />
+
+    <!-- <------------------------------------------------------------------------->
+    <section id="about">
+        <div class="leftcol">
+            <img src="images/about.png" alt="" />
+        </div>
+        <div class="rightcol">
+            <h1>about us</h1>
+            <span class="line1"></span>
+
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum
+                excepturi modi quo sunt iure impedit nisi, assumenda qui consequuntur
+                veritatis libero ipsum fugit dolor eveniet perspiciatis amet inventore
+                quisquam labore cupiditate minima delectus illo. Similique tenetur
+                maxime laudantium soluta praesentium non, assumenda dignissimos
+                perspiciatis repudiandae adipisci? Iste expedita quidem corporis!
+            </p>
+            <div class="line" id="about-line">
+                <span class="line1"></span><br />
+                <span class="line2"></span><br />
+                <span class="line3"></span>
+            </div>
+            <p class="second-para">
+                <i>"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae
+                    natus, a architecto provident nesciunt quo sit exercitationem
+                    repudiandae laboriosam qui. "</i>
+            </p>
+            <h3>--- Andrew Garfield</h3>
+        </div>
+    </section>
+    <!-- <------------------------------------------------------------------>
+    <section id="features">
+        <div class="big-box">
+            <div class="first-box">
+                <img src="images/pic-1.png" alt="" />
+                <h2>Learn Anywhere</h2>
+                <p>Learn between your computer, tablet or mobile device</p>
+            </div>
+            <div class="second-box">
+                <img src="images/pic-3.png" alt="" />
+                <h2>Expert Teachers</h2>
+                <p>Learn between your computer, tablet or mobile device</p>
+            </div>
+            <div class="third-box">
+                <img src="images/pic-2.png" alt="" />
+                <h2>Unlimited Access</h2>
+                <p>Learn between your computer, tablet or mobile device</p>
+            </div>
+          
+                
+        </div>
+        <button class="common-btn" id="btn">Start free trial</button>
+        <div class="line" id="features-line">
+            <span class="line1"></span><br />
+            <span class="line2"></span><br />
+            <span class="line3"></span>
+        </div>
+       
+    </section>
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        var menubtn = document.getElementById("menubtn");
+        var sideNav = document.getElementById("sideNav");
+        sideNav.style.right = "-250px";
+        menubtn.onclick = function () {
+            if (sideNav.style.right == "-250px") sideNav.style.right = "0px";
+            else sideNav.style.right = "-250px";
+        };
+    </script>
+</body>
+
+</html>
