@@ -251,10 +251,41 @@ min-height: 60px;
     padding-left: 40%;
     
 }
+#courses{
+    min-height: 60vh;
+    max-width: fit-content;
+    margin-top: 20vh;
+    display: flex;
 
+}
+#courses .leftcol
+{
+    flex-basis: 50%;
+}
+#courses .leftcol img
+{
+    width: 100%;
+}
+#courses .rightcol{
+    flex-basis: 50%;
+}
+#courses .rightcol{
+padding: 120px 20px;
 
+}
 
+.rightcol h1{
+    text-align: right;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
 
+#btn2{
+    position: absolute;
+    right: 0;
+    margin-right: 30px;
+}
 
 
 
@@ -288,7 +319,7 @@ min-height: 60px;
     .rightcol{
         margin: 0 50px;
         text-align: center;
-        min-height: 100vh;
+        min-height: 50vh;
         
     }
     .rightcol p{
@@ -331,6 +362,12 @@ text-align: center;
 display: none;
 
 }
+#btn2{
+    position: absolute;
+    left: 30%;
+    width: fit-content;
+}
+
 }
 @media (min-width:400px) and (max-width:700px) {
     
@@ -344,5 +381,10 @@ display: none;
 #features-line{
     margin: 10px;
     
+    }
+    #btn2{
+        position: absolute;
+        left: 30%;
+        width: fit-content;
     }
 }
