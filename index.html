@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
 </head>
 
 <body>
@@ -37,12 +39,12 @@
     </section>
     <nav id="sideNav">
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Features</a></li>
-            <li><a href="#">Courses</a></li>
-            <li><a href="#">Offer</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About us</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#courses">Offer</a></li>
+            <li><a href="#fillup">Contact</a></li>
         </ul>
     </nav>
     <img src="images/menu.png" id="menubtn" alt="" />
@@ -132,6 +134,57 @@
             <button class="common-btn" id="btn2">Start my free month</button>
            
     </section>
+    <section id="fillup">
+        <div class="left">
+            <h2>sign up to join our learning community</h2>
+            <form action="">
+                <input type="name" name="" id="first" placeholder="Input your name">
+             <input type="password" id="second" placeholder="Enter your password">
+             <input type="mail" id="third" placeholder="Enter your email">
+             <button class="common-btn" id="form-button1">Sign up</button>
+             <button class="common-btn" id="form-button2">Start free trial</button>
+            </form>
+        </div>
+        <div class="right">
+            <img src="images/contact.png" alt="">
+        </div>
+      
+    </section>
+    <!-- <------------------------------------------------------------------------>
+
+    <section id="footer">
+        <hr>
+        <div class="footer-container">
+
+<div class="ft-left">
+<div class="left1">
+    <h4>About us</h4>
+    <small>Request a demo</small>
+    <small>FAQ</small>
+</div>
+<div class="left2"> <h4>Product</h4>
+    <small>Our plans</small>
+    <small>Free trails</small></div>
+<div class="left3"> <h4>Support</h4>
+    <small>Features</small>
+    <small>Contact us</small></div>
+<div class="left4"> <h4>Explore</h4>
+    <small>Find a non profit</small>
+    <small>Cooperate solutions</small></div>
+</div>
+<div class="ft-right">
+<div class="right1">
+<small>copyright @nabin bhandari</small>
+<small>2022 xypo</small>
+</div>
+
+    <div class="right-c1">
+        <img src="images/logo.png" alt="">
+        <button class="common-btn" id="lastbutton">Explore</button>
+    </div>
+</div>
+
+    </section>
 
 
 
@@ -155,7 +208,8 @@
         menubtn.onclick = function () {
             if (sideNav.style.right == "-250px") sideNav.style.right = "0px";
             else sideNav.style.right = "-250px";
-        };
+        }
+        var scroll = new SmoothScroll('a[href*="#"]');
     </script>
 </body>
 
